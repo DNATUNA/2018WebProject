@@ -1,0 +1,75 @@
+       .container {
+           width: 700px;
+           height: auto;
+           margin: auto;
+       }
+
+       .search {
+           float: right;
+           margin: 10px;
+           font-size: 0.7em;
+
+       }
+
+       .search button {
+           border: 1px solid #ccc;
+           background-color: lightgray;
+           float: right;
+       }
+
+       table.board {
+           width: 100%;
+           border-top: 1px solid #ccc;
+           border-collapse: collapse;
+           font-size: 0.8em;
+       }
+
+       table.board th,
+       tr {
+           border-bottom: 1px solid #ccc;
+           padding: 5px;
+       }
+
+       table.board th {
+           text-align: left;
+
+           background-color: lightgray;
+       }
+
+       table.board td {
+           padding: 5px;
+       }
+
+       .page {
+           width: 60%;
+           margin-left: 20%;
+           text-align: center;
+       }
+
+       .page button {
+           border: 1px solid #ccc;
+           background-color: white;
+       }
+
+       .page ul {
+           margin: 0;
+           padding: 0;
+           display: inline-flex;
+
+       }
+
+       .page ul li {
+           list-style: none;
+           padding: 10px;
+       }
+
+       a {
+           text-decoration: none;
+           color: black;
+       }
+
+       #write {
+           border: 1px solid #ccc;
+           background-color: lightgray;
+           float: right;
+       }

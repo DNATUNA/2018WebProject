@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+
+<body>
+
+    <div id="box">
+        <h2 id="h2">APPLY</h2>
+        <p id="click" onclick="resize()">CLICK</p>
+    </div>
+    <div class="apply_main">
+        <div id="slider">
+            <div class="apply_padding">
+                <div class="backgroundImage_slider">
+                    <input type="radio" name="pos" id="pos1" checked>
+                    <input type="radio" name="pos" id="pos2">
+                    <input type="radio" name="pos" id="pos3">
+                    <input type="radio" name="pos" id="pos4">
+                    <ul>
+                        <li>
+                            <h2>2017년 현황</h2>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="business.jpg" alt="">
+                            </div>
+                            <h3 class="da_1">총 기업수</h3><span class="da_2">1577개</span>
+                            <h3 class="da_1">연간 투자집행 금액</h3><span class="da_2">160873.29억</span>
+                        </li>
+                        <li>
+                            <div class="Border_2">
+                                <h3>Top 5 기술</h3>
+                                <div class="graph">
+                                    <span>제조</span><strong class="bar" style="width: 70%;">70%</strong>
+                                </div>
+                                <div class="graph">
+                                    <span>전자상거래</span><strong class="bar" style="width: 59%;">59%</strong>
+                                </div>
+                                <div class="graph">
+                                    <span>게임개발</span><strong class="bar" style="width: 40%;">40%</strong>
+                                </div>
+                                <div class="graph">
+                                    <span>리얼타임 커뮤니케이션</span><strong class="bar" style="width: 38%;">38%</strong>
+                                </div>
+
+                                <div class="graph">
+                                    <span>사물인터넷/센서</span><strong class="bar" style="width: 27%;">27%</strong>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Border_2">
+                                <h3>Top 5 분야</h3>
+                                <div class="graph">
+                                    <span>RPG게임</span><strong class="bar" style="width: 65%;">65%</strong>
+                                </div>
+                                <div class="graph">
+                                    <span>약품/약물</span><strong class="bar" style="width: 58%;">58%</strong>
+                                </div>
+                                <div class="graph">
+                                    <span>전자상품</span><strong class="bar" style="width: 53%;">53%</strong>
+                                </div>
+                                <div class="graph">
+                                    <span>이미지/영상</span><strong class="bar" style="width: 44%;">44%</strong>
+                                </div>
+
+                                <div class="graph">
+                                    <span>기업투자</span><strong class="bar" style="width: 38%;">38%</strong>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="pos">
+                        <label for="pos1"></label>
+                        <label for="pos2"></label>
+                        <label for="pos3"></label>
+                        <label for="pos4"></label>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <div class="apply_main">
+                <h3>지원하기</h3>
+                <table>
+                    <tr>
+                        <td class="width1">제목</td>
+                        <td><input type="text" class="input_1"></td>
+                    </tr>
+                    <tr>
+                        <td class="width2">내용</td>
+                        <td><textarea class="input_2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="width3">첨부파일</td>
+                        <td> <input type="file" class="file"></td>
+                    </tr>
+                </table>
+                <input type="submit" value="제출하기" class="apply_submit">
+            </div>
+        </div>
+    </div>
+    <script>
+        function resize() {
+            if (document.getElementById("box").style.width === "100%") {
+                document.getElementById("box").style.animationName = "slideout";
+                document.getElementById("box").style.width = "10%";
+                document.getElementById("h2").style.display = "none";
+                document.getElementById("slider").style.display = "inline-block";
+                document.getElementById("click").style.left = "0px";
+                document.getElementById("form").style.display = "inline-block";
+            } else {
+                document.getElementById("box").style.animationName = "slidein";
+                document.getElementById("box").style.width = "100%";
+                document.getElementById("h2").style.display = "block";
+                document.getElementById("slider").style.display = "none";
+                document.getElementById("form").style.display = "none";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

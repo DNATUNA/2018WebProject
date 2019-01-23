@@ -1,0 +1,147 @@
+.backgroundImage_slider {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.backgroundImage_slider li {
+    list-style: none;
+    width: 400%;
+    height: 100%;
+    transition: 1s;
+}
+
+.backgroundImage_slider ul {
+    list-style: none;
+    width: 400%;
+    height: 100%;
+    transition: 1s;
+}
+
+.backgroundImage_slider ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.backgroundImage_slider li {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.backgroundImage_slider li:nth-child(1) {}
+
+.backgroundImage_slider li:nth-child(2) {
+    text-align: center;
+}
+
+.da_1 {
+    font-size: 2rem;
+}
+
+.da_2 {
+    font-size: 1.2rem;
+
+    position: relative;
+}
+
+.backgroundImage_slider li:nth-child(3) {}
+
+.Border_2 {
+    font-size: 1rem;
+}
+
+.graph {
+    position: relative;
+    /* IE is dumb */
+    width: 700px;
+    padding: 2px;
+    font-size: 1rem;
+    font-family: tahoma;
+    margin-bottom: 3px;
+}
+
+.graph .bar {
+    display: block;
+    position: relative;
+    background: #B1D632;
+    text-align: center;
+    color: #333;
+    height: 3em;
+    line-height: 3em;
+    border-radius: 30px;
+    width: 20vw;
+}
+
+.graph span {
+    font-size: 1.5rem;
+}
+
+.graph .bar span {
+    position: absolute;
+    left: 1em;
+}
+
+.backgroundImage_slider li:nth-child(4) {}
+
+.backgroundImage_slider img {
+    z-index: -10;
+    width: 100%;
+    height: inherit;
+}
+
+.backgroundImage_slider input {
+    display: none;
+}
+
+.backgroundImage_slider label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #666;
+    background: #fff;
+    transition: 0.3s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.backgroundImage_slider .pos {
+    position: relative;
+    left: 44%;
+    top: 50%;
+
+}
+
+#pos1:checked ~ ul {
+    margin-left: -5%;
+}
+
+#pos2:checked ~ ul {
+    margin-left: -105%;
+}
+
+#pos3:checked ~ ul {
+    margin-left: -205.5%;
+}
+
+#pos4:checked ~ ul {
+    margin-left: -305%;
+}
+
+#pos1:checked ~ .pos > label:nth-child(1) {
+    background: #666;
+}
+
+#pos2:checked ~ .pos > label:nth-child(2) {
+    background: #666;
+}
+
+#pos3:checked ~ .pos > label:nth-child(3) {
+    background: #666;
+}
+
+#pos4:checked ~ .pos > label:nth-child(4) {
+    background: #666;
+}

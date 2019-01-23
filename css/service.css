@@ -1,0 +1,29 @@
+.S_I {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #00a0e9;
+    width: 35vw;
+    height: 100vh;
+    float: left;
+}
+
+.S_I h2 {
+    position: relative;
+    top: 300px;
+    color: #FFF;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.S_L {
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: 10px;
+    text-align: center;
+}
+
+.S_L h2 {
+    margin: auto;
+}
